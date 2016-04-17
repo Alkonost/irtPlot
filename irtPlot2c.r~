@@ -1,3 +1,17 @@
+#dt <- data.frame(a = c(1.8, 0.7, 1.8, 1.2, 1.2, 0.5),
+#	          b = c(1.0, 1.0, 1.0, -0.5, 0.5, 0),
+#		  c = c(0.0, 0.0, 0.25, 0.2, 0.0, 0.1),
+#                 s = c(0, 1, 0, 1, 1, 0))
+#tht <- seq(-3, 3, .01)
+#
+#title <- "Item Information Functions for Six Items"
+#
+#dir <- "..Panko/Documents/" #or# dir <- getwd()
+#
+#filename <- "iif_plot.jpg"
+#
+#type <- "iif" #or# type <- "icc" #or# type <- "logl #or# type <- likl
+
 irtPlot <- function(dat,
                     theta,
                     title = NULL,
@@ -168,4 +182,4 @@ plotThings <- function(itms, ttl = title, x1, y1, color, ylbs = ylb) {
 
 }
 
-
+#irtPlot(dat = dat, theta = theta, title = title, save = TRUE, type = type, filename = filename)
